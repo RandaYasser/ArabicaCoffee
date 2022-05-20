@@ -390,7 +390,62 @@ section{
     background: var(--main-color);
 
 }
-
+.products .box-container .seemore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+    font-size: 24px;
+}
+.products .box-container .seemore a{
+  text-decoration: none;
+  border: 2px solid var(--border);
+  padding: 15px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+.products .box-container .seemore a:hover{
+    color: var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+.products .box-container .seemore span {
+    position: relative;
+    z-index: 3;
+  }
+  .products .box-container .seemore a::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -2px;
+    width: calc(100% + 6px);
+    /*100% plus double the times left values*/
+    height: calc(100% - 10px);
+    background-color: var(--main-color);
+    transition: all 0.5s ease-in-out;
+    transform: scaleY(1);
+}
+.products .box-container .seemore a:hover::before{
+    transform: scaleY(0);
+}
+.products .box-container .seemore a::after{
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    width: calc(100% - 10px);
+    /*100% plus double the times left values*/
+    height: calc(100% + 10px);
+    background-color: var(--main-color);
+    transition: all 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+.products .box-container .seemore a:hover::after{
+    transform: scaleX(0);
+}
 .products .box-container .box .image{
     padding: 2.5rem 0;
 }
@@ -517,7 +572,7 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 2fr));
     gap:1.5rem;
-    margin: 20px;
+   
 }
 
 .blogs .box-container .box{

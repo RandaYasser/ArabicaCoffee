@@ -49,8 +49,10 @@ section{
     text-align: center;
     color:#fff;
     text-transform: uppercase;
-    padding-bottom: 3.5rem;
+    padding-bottom: 100px;
     font-size: 4rem;
+    position: relative;
+    top:100px;
 }
 
 .heading span{
@@ -202,12 +204,19 @@ section{
 .header .cart-items-container.active{
     right: 0;
 }
-
-
+/*
+.menu .drinks h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color:#fff;
+}
+*/
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap:1.5rem;
+    padding-top: 30px;
+   
 }
 
 .menu .box-container .box{
@@ -245,7 +254,42 @@ section{
 .menu .box-container .box:hover > *{
     color:var(--black);
 }
+.footer{
+    background:var(--black);
+    text-align: center;
+}
 
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+
+
+.footer .credit{
+    font-size: 2rem;
+    color:#fff;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+}
 /* media queries  */
 @media (max-width:991px){
 
