@@ -416,7 +416,7 @@ section{
     position: relative;
     z-index: 3;
   }
-  .products .box-container .seemore a::before{
+.products .box-container .seemore a::before{
     content: "";
     position: absolute;
     top: 5px;
